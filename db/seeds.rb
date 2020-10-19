@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+marvel = Publisher.create(name: "Marvel Comics")
+dc = Publisher.create(name: "DC Comics")
+image= Publisher.create(name: "Image Comics")
