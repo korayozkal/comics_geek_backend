@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Comicbook.destroy_all
-Publisher.destroy_all
+#Comicbook.destroy_all
+#Publisher.destroy_all
 
 marvel = Publisher.create(name: "Marvel Comics")
 dc = Publisher.create(name: "DC Comics")
