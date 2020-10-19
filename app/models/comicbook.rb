@@ -1,3 +1,3 @@
 class Comicbook < ApplicationRecord
-    #belongs_to :publisher
+    belongs_to :publisher
 end

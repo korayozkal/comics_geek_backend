@@ -1,3 +1,3 @@
 class Publisher < ApplicationRecord
-    #has_many :comicbooks 
+    has_many :comicbooks 
 end
