@@ -24,9 +24,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
+gem 'fast_jsonapi'
+# gives us access to serializer generator=> rails g serializer Model, this created  app/serializers/comicbook_serializer.rb
 gem 'active_model_serializers'
-
-
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

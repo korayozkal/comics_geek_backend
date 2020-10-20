@@ -2,9 +2,12 @@ class ComicbooksController < ApplicationController
     
     def index
         comicbooks= Comicbook.all
-        render json: comicbooks
+        #render json: comicbooks  #- before using serializer
+        render json: ComicbookSerializer.new(comicbooks)
+        #
     end
-   
+
+
     def create
         comicbook = comicbooks.new(comicbook_params)
       if @comicbook.save
