@@ -9,8 +9,10 @@ class ComicbooksController < ApplicationController
         comicbook = comicbooks.new(comicbook_params)
       if @comicbook.save
         render json: comicbook, status: :accepted
+        #https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202
       else
         render json: {errors: syllabus.errors.full_messages}, status: :unprocessible_entity
+        #https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
       end 
     end 
 
