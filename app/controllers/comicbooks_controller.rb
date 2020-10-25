@@ -21,7 +21,7 @@ class ComicbooksController < ApplicationController
 
 private 
     def comicbook_params
-       params.require(:comicbook).permit(:title, :number, :writer, :artist, :publisher_id, :description, :image_url)
+       params.require(:comicbook).permit(:title, :writer, :artist, :image_url, :publisher_id,)
     end
 
 end
