@@ -18,6 +18,24 @@ class ComicbooksController < ApplicationController
         render json: {errors: comicbook.errors.full_messages}, status: :unprocessible_entity
       end 
     end 
+       
+      #def update##
+          #comicbook = Comicbook.find_by_id(params[:id])#
+          #comicbook.update(comicbook_params)##
+     # if comicbook.save ##
+         # render json: comicbook, status: :accepted##
+      #else##
+      #  render json: {errors: comicbook.errors.full_messages}, status: :unprocessible_entity##
+      #end ##
+   # end ##
+      
+    def destroy
+     @comicbook = Comicbook.find_by_id(params[:id])
+     @comicbook.destroy
+    
+    end 
+
+
 
 private 
     def comicbook_params
